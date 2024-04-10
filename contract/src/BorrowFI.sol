@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
 
 contract BorrowFI {
-    IERC20 public bFI;
+    IERC20 public bFI; // Borrow Token
     IERC20 public clt; // Collateral Token
 
     mapping(address user => uint256 amount) public collateralOf;
